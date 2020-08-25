@@ -1,2 +1,2 @@
 # suuunaru.github.io
-github practice
+githubでバージョン管理をします
