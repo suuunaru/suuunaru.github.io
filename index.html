@@ -5,17 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gtihub-uploade</title>
     <style>
-        html,body,ul,li{
+        html,body{
             margin: 0;
             padding: 0;
         }
+        .box{
+            width: 100%;
+            height: 300px;
+            background-color: cadetblue;
+            transform: translate(100%);/* 一個分ずれる */
+            transition: 0.6s;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ .g-nav{
+            transform: translate(0,0);
+        }
+        .g-nav{
+            width: 100%;
+            height: 60px;
+            background-color: green;
+        }
+        .g-nav>ul{
+            
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .g-nav li{
+            width: 25%;
+            height: 60px;
+            background-color: rgb(184, 76, 76);
+        }
+        .g-nav a{
+            text-align: center;
+            line-height: 60px;
+        }
+
     </style>
 </head>
 
 <body>
-    <header>
         <h1>10/27</h1>
-    </header>
-    
+        <input type="checkbox" id="check">
+        <label for="check"><p>ボタン</p></label>
+        <nav class="g-nav">
+            <ul>
+             <li><a href="#">ボタン1</a></li>
+             <li><a href="#">ボタン1</a></li>
+             <li><a href="#">ボタン1</a></li>
+             <li><a href="#">ボタン1</a></li>
+            </ul>
+        </nav>
 </body>
 </html>
